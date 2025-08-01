@@ -361,7 +361,7 @@
                         <i class="fas fa-map-marked-alt text-6xl mb-4"></i>
                         <p class="text-xl font-semibold">Google Maps</p>
                         <p class="text-sm">Jl. Fatmawati Rukan ITC Lantai 3, Jakarta Selatan</p>
-                        <a href="https://maps.google.com" target="_blank" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all duration-300">
+                        <a href="https://maps.app.goo.gl/GKsmiMCZi1Sj3erU7" target="_blank" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all duration-300">
                             Buka di Google Maps
                         </a>
                     </div>
@@ -592,15 +592,15 @@
             // Create WhatsApp message
             const message = `Halo, saya ingin konsultasi tentang:
             
-Nama: ${data.name}
-Telepon: ${data.phone}
-Email: ${data.email || '-'}
-Layanan: ${data.service}
-Alamat: ${data.address || '-'}
-Pesan: ${data.message || '-'}
+            Nama: ${data.name}
+            Telepon: ${data.phone}
+            Email: ${data.email || '-'}
+            Layanan: ${data.service}
+            Alamat: ${data.address || '-'}
+            Pesan: ${data.message || '-'}
 
-Mohon informasi lebih lanjut. Terima kasih!`;
-            
+            Mohon informasi lebih lanjut. Terima kasih!`;
+                        
             // Open WhatsApp
             const whatsappUrl = `https://wa.me/6281563450004?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
