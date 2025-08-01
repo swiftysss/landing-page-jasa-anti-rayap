@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Home Care Jakarta | Jasa Anti Rayap & Pest Control</title>
+    <meta name="description" content="Mengenal lebih dekat Home Care Jakarta. Perusahaan jasa anti rayap dan pest control terpercaya di Jakarta sejak 2014 dengan tim profesional berpengalaman.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3 sm:py-4">
+                <div class="flex items-center space-x-2 sm:space-x-3 hover-scale cursor-pointer">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br rounded-lg flex items-center justify-center shadow-lg float">
+                        <img src="logo.png" alt="Home Care Jakarta">
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-red-600">Home Care Jakarta</h1>
+                        <p class="text-xs text-gray-600 hidden sm:block">Jasa Anti Rayap dan Pencegah Serangga</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html" class="nav-link px-3 xl:px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300 font-medium text-sm xl:text-base">
+                        <i class="fas fa-home mr-1 xl:mr-2"></i>Home
+                    </a>
+                    <a href="jasa-anti-rayap.html" class="nav-link px-3 xl:px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300 font-medium text-sm xl:text-base">
+                        <i class="fas fa-shield-alt mr-1 xl:mr-2"></i>Anti Rayap
+                    </a>
+                    <a href="pest-control.html" class="nav-link px-3 xl:px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300 font-medium text-sm xl:text-base">
+                        <i class="fas fa-bug mr-1 xl:mr-2"></i>Pest Control
+                    </a>
+                    <a href="tentang-kami.html" class="nav-link px-3 xl:px-4 py-2 text-red-600 bg-red-50 rounded-lg transition-all duration-300 font-medium text-sm xl:text-base">
+                        <i class="fas fa-users mr-1 xl:mr-2"></i>Tentang Kami
+                    </a>
+                    <a href="kontak.html" class="nav-link px-3 xl:px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300 font-medium text-sm xl:text-base">
+                        <i class="fas fa-phone mr-1 xl:mr-2"></i>Kontak
+                    </a>
+                </nav>
+                
+                <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
+                    <a href="https://wa.link/3n2v21">
+                        <button class="bg-red-600 hover:bg-red-700 text-white px-4 lg:px-6 py-2 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 pulse-glow text-sm lg:text-base">
+                            <span class="hidden lg:inline">Konsultasi Gratis</span>
+                            <span class="lg:hidden">Konsultasi</span>
+                        </button>
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-200 shadow-lg hidden">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="space-y-2">
+                    <a href="index.html" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="jasa-anti-rayap.html" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Anti Rayap</span>
+                    </a>
+                    <a href="pest-control.html" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300">
+                        <i class="fas fa-bug"></i>
+                        <span>Pest Control</span>
+                    </a>
+                    <a href="tentang-kami.html" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 text-red-600 bg-red-50 rounded-lg transition-all duration-300">
+                        <i class="fas fa-users"></i>
+                        <span>Tentang Kami</span>
+                    </a>
+                    <a href="kontak.html" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-300">
+                        <i class="fas fa-phone"></i>
+                        <span>Kontak</span>
+                    </a>
+                </nav>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <a href="https://wa.link/3n2v21">
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-medium transition-all duration-300">
+                            Konsultasi Gratis
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-red-600 transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+                <span class="text-red-600 font-medium">Tentang Kami</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 lg:py-24 overflow-hidden">
+        <div class="particles">
+            <div class="particle w-2 h-2 sm:w-4 sm:h-4" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="particle w-1 h-1 sm:w-2 sm:h-2" style="left: 30%; animation-delay: 5s;"></div>
+            <div class="particle w-3 h-3 sm:w-5 sm:h-5" style="left: 50%; animation-delay: 10s;"></div>
+            <div class="particle w-2 h-2 sm:w-3 sm:h-3" style="left: 70%; animation-delay: 15s;"></div>
+            <div class="particle w-1 h-1 sm:w-2 sm:h-2" style="left: 90%; animation-delay: 20s;"></div>
+        </div>
+        
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative container mx-auto px-4">
+            <div class="text-center scroll-reveal">
+                <div class="inline-block bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium mb-6 hover-scale">
+                    🏢 Sejak 2014
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                    Tentang <span class="gradient-text">Home Care Jakarta</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto">
+                    Perusahaan jasa anti rayap dan pest control terpercaya di Jakarta dengan pengalaman lebih dari 10 tahun melayani ribuan klien.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="scroll-reveal">
+                    <div class="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        Cerita Kami
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                        Perjalanan <span class="gradient-text">10+ Tahun</span>
+                    </h2>
+                    <div class="space-y-6 text-gray-600 leading-relaxed">
+                        <p>
+                            Home Care Jakarta didirikan pada tahun 2014 dengan visi menjadi perusahaan jasa pengendalian hama terdepan di Jakarta. Berawal dari keprihatinan terhadap banyaknya kasus kerusakan properti akibat serangan rayap dan hama lainnya.
+                        </p>
+                        <p>
+                            Dengan komitmen tinggi terhadap kualitas layanan dan kepuasan pelanggan, kami terus berkembang dan kini telah melayani lebih dari 5.000 klien di seluruh Jakarta dan sekitarnya.
+                        </p>
+                        <p>
+                            Tim profesional kami terdiri dari teknisi berpengalaman yang telah tersertifikasi dan menggunakan teknologi serta bahan-bahan terbaru yang aman untuk keluarga dan lingkungan.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative scroll-reveal">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                        <img src="timkami.jpeg" alt="Tim Home Care Jakarta" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">5000+</div>
+                            <div class="text-sm text-gray-600">Klien Puas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Mission -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Visi & Misi
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                    Komitmen <span class="gradient-text">Kami</span>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 scroll-reveal">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">Visi Kami</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        Menjadi perusahaan jasa pengendalian hama terdepan di Indonesia yang memberikan solusi terbaik untuk melindungi properti dan kesehatan masyarakat dari ancaman hama dengan teknologi modern dan ramah lingkungan.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 scroll-reveal">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">Misi Kami</h3>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <span>Memberikan layanan pengendalian hama berkualitas tinggi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <span>Menggunakan teknologi dan bahan yang aman</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <span>Memberikan jaminan kepuasan pelanggan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <span>Mengembangkan SDM yang profesional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Nilai-Nilai Kami
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                    Yang Kami <span class="gradient-text">Junjung Tinggi</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group scroll-reveal">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-handshake text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Integritas</h3>
+                    <p class="text-gray-600">Berkomitmen pada kejujuran dan transparansi dalam setiap layanan yang kami berikan</p>
+                </div>
+
+                <div class="text-center group scroll-reveal">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-star text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Kualitas</h3>
+                    <p class="text-gray-600">Mengutamakan kualitas dalam setiap aspek layanan untuk kepuasan pelanggan</p>
+                </div>
+
+                <div class="text-center group scroll-reveal">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Ramah Lingkungan</h3>
+                    <p class="text-gray-600">Menggunakan bahan dan metode yang aman untuk lingkungan dan kesehatan</p>
+                </div>
+
+                <div class="text-center group scroll-reveal">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-users text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Profesionalisme</h3>
+                    <p class="text-gray-600">Tim yang terlatih dan berpengalaman dengan standar kerja yang tinggi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Tim Kami
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                    Orang-Orang <span class="gradient-text">Terbaik</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tim profesional yang berpengalaman dan berdedikasi tinggi
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center scroll-reveal">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-tie text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Direktur Utama</h3>
+                    <p class="text-blue-600 font-medium mb-4">Pemimpin Perusahaan</p>
+                    <p class="text-gray-600 text-sm">Memimpin dengan visi yang jelas dan komitmen terhadap kualitas layanan terbaik</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center scroll-reveal">
+                    <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Kepala Teknisi</h3>
+                    <p class="text-green-600 font-medium mb-4">Supervisor Lapangan</p>
+                    <p class="text-gray-600 text-sm">Mengawasi dan memastikan kualitas pekerjaan di lapangan sesuai standar</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center scroll-reveal md:col-span-2 lg:col-span-1">
+                    <div class="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Customer Service</h3>
+                    <p class="text-red-600 font-medium mb-4">Pelayanan Pelanggan</p>
+                    <p class="text-gray-600 text-sm">Melayani konsultasi dan keluhan pelanggan dengan responsif dan ramah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Pencapaian
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                    Prestasi <span class="gradient-text">Kami</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center scroll-reveal">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-calendar text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="counter text-4xl font-bold text-blue-600 mb-2" data-target="10">0</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Tahun Pengalaman</h3>
+                    <p class="text-gray-600 text-sm">Melayani Jakarta sejak 2014</p>
+                </div>
+
+                <div class="text-center scroll-reveal">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="counter text-4xl font-bold text-green-600 mb-2" data-target="5000">0</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Klien Puas</h3>
+                    <p class="text-gray-600 text-sm">Kepercayaan yang terus bertumbuh</p>
+                </div>
+
+                <div class="text-center scroll-reveal">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-red-600 text-2xl"></i>
+                    </div>
+                    <div class="counter text-4xl font-bold text-red-600 mb-2" data-target="15000">0</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Proyek Selesai</h3>
+                    <p class="text-gray-600 text-sm">Berbagai jenis properti</p>
+                </div>
+
+                <div class="text-center scroll-reveal">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="counter text-4xl font-bold text-purple-600 mb-2" data-target="99">0</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Tingkat Kepuasan</h3>
+                    <p class="text-gray-600 text-sm">Persentase klien puas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Sertifikasi
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                    Kredibilitas <span class="gradient-text">Terjamin</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Berbagai sertifikasi dan izin resmi yang kami miliki
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center scroll-reveal">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">Izin Usaha Resmi</h3>
+                    <p class="text-gray-600 text-sm">Terdaftar resmi dengan izin usaha yang lengkap dari pemerintah</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center scroll-reveal">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">Sertifikat Kemenkes</h3>
+                    <p class="text-gray-600 text-sm">Bahan kimia yang digunakan terdaftar dan disetujui Kementerian Kesehatan</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center scroll-reveal md:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-graduate text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">Teknisi Tersertifikasi</h3>
+                    <p class="text-gray-600 text-sm">Tim teknisi yang telah mengikuti pelatihan dan memiliki sertifikat kompetensi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
+        <div class="particles">
+            <div class="particle w-2 h-2 sm:w-3 sm:h-3" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="particle w-1 h-1 sm:w-2 sm:h-2" style="left: 30%; animation-delay: 5s;"></div>
+            <div class="particle w-3 h-3 sm:w-4 sm:h-4" style="left: 50%; animation-delay: 10s;"></div>
+            <div class="particle w-2 h-2 sm:w-3 sm:h-3" style="left: 70%; animation-delay: 15s;"></div>
+            <div class="particle w-1 h-1 sm:w-2 sm:h-2" style="left: 90%; animation-delay: 20s;"></div>
+        </div>
+        
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative container mx-auto px-4 text-center">
+            <div class="scroll-reveal">
+                <div class="inline-block bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    Bergabung Dengan Kami
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">Percayakan Pada Ahlinya!</h2>
+                <p class="text-xl mb-12 text-blue-100 max-w-3xl mx-auto">
+                    Dengan pengalaman 10+ tahun dan ribuan klien yang puas, kami siap melindungi properti Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="https://wa.link/3n2v21">
+                        <button class="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 rounded-lg pulse-glow">
+                            <i class="fas fa-phone mr-2"></i>
+                            0815-6345-0004
+                        </button>
+                    </a>
+                    <a href="https://wa.link/3n2v21">
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg bg-transparent transition-all duration-300 hover:scale-105 rounded-lg">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Chat WhatsApp
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="scroll-reveal">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br rounded-lg flex items-center justify-center float">
+                            <img src="logo.png" alt="Home Care Jakarta">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Home Care Jakarta</h3>
+                            <p class="text-sm text-gray-400">Pest Control Expert</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Melayani jasa anti rayap dan pest control terpercaya di Jakarta sejak 2014 dengan teknologi modern dan tim profesional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/homecare.anti_rayap/" class="text-gray-400 hover:text-white transition-colors hover:scale-125">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://youtu.be/irk6Xh0r-c4" class="text-gray-400 hover:text-white transition-colors hover:scale-125">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="scroll-reveal">
+                    <h4 class="text-lg font-semibold mb-6">Layanan</h4>
+                    <ul class="space-y-3">
+                        <li><a href="jasa-anti-rayap.html" class="text-gray-400 hover:text-white transition-colors">Anti Rayap</a></li>
+                        <li><a href="pest-control.html" class="text-gray-400 hover:text-white transition-colors">Pest Control</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors">Fumigasi</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-white transition-colors">Konsultasi</a></li>
+                    </ul>
+                </div>
+                <div class="scroll-reveal">
+                    <h4 class="text-lg font-semibold mb-6">Perusahaan</h4>
+                    <ul class="space-y-3">
+                        <li><a href="tentang-kami.html" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="index.html#gallery" class="text-gray-400 hover:text-white transition-colors">Portofolio</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-white transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="scroll-reveal">
+                    <h4 class="text-lg font-semibold mb-6">Kontak</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <i class="fas fa-phone text-red-500"></i>
+                            <span>0815-6345-0004</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <i class="fas fa-envelope text-red-500"></i>
+                            <span>santopestcare@gmail.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <i class="fas fa-map-marker-alt text-red-500"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Home Care Jakarta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-40 space-y-3">
+        <a href="https://wa.link/3n2v21">
+            <button class="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center pulse-glow">
+                <i class="fab fa-whatsapp text-xl"></i>
+            </button>
+        </a>
+        <a href="tel:+6281563450004">
+            <button class="w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center bounce-slow">
+                <i class="fas fa-phone text-xl"></i>
+            </button>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" class="fixed bottom-6 left-6 w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
