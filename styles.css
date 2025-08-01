@@ -1,0 +1,479 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.6);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loading-dots {
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #dc2626;
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Animation classes */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+.bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+.slide-in-left {
+  animation: slide-in-left 0.8s ease-out;
+}
+.slide-in-right {
+  animation: slide-in-right 0.8s ease-out;
+}
+.fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+.rotate-360 {
+  animation: rotate-360 2s linear infinite;
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(45deg, #dc2626, #f59e0b, #10b981);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+/* Particle background */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: particle-float 15s linear infinite;
+}
+
+/* Loading animation */
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: "";
+  animation: loading-dots 1.5s infinite;
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid #dc2626;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Scroll reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .particles .particle {
+    animation-duration: 20s;
+  }
+
+  .gradient-text {
+    background-size: 300% 300%;
+  }
+
+  .typewriter {
+    border-right-width: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
+  .hover-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Focus states for accessibility */
+button:focus,
+input:focus,
+a:focus {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .float,
+  .bounce-slow,
+  .pulse-glow,
+  .rotate-360,
+  .particle {
+    animation: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hover-scale:hover,
+  .hover-glow:hover {
+    transform: none;
+  }
+}
+
+/* Tambahkan ini ke stylesheet Anda */
+#mobile-menu {
+    position: fixed;
+    top: 68px; /* Sesuaikan dengan tinggi header */
+    left: 0;
+    right: 0;
+    z-index: 30;
+    background: white;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    overflow-y: auto;
+    max-height: calc(100vh - 68px);
+}
+
+#mobile-menu.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#mobile-menu.block {
+    display: block;
+}
+
+#mobile-menu.hidden {
+    display: none;
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.prose {
+  line-height: 1.6;
+}
+
+.prose h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.hover-glow:hover {
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    20%, 60% { transform: rotate(-5deg); }
+    40%, 80% { transform: rotate(5deg); }
+}
+
+    /* Mobile Styles */
+    @media (max-width: 1023px) {
+    #sidebar {
+        position: fixed !important; /* ← tambahkan ini */
+        transform: translateX(100%) !important;
+        top: 0 !important;
+        right: 0 !important;
+        height: 100vh !important;
+        width: 300px !important;
+        max-width: 80% !important;
+        border-radius: 0 !important;
+        transform-origin: right center !important;
+        transition: transform 0.3s ease-in-out !important;
+        z-index: 9998 !important; /* opsional untuk pastikan tampil di atas */
+    }
+        
+        #sidebar.translate-x-0 {
+            transform: translateX(0) !important;
+        }
+        
+        #sidebar-toggle {
+            display: none !important;
+        }
+        
+        #mobile-sidebar-toggle {
+            display: flex !important;
+        }
+        
+        /* Sidebar content adjustments */
+        #sidebar .space-y-4 {
+            padding-top: 20px;
+            overflow-y: auto;
+            height: calc(100% - 40px);
+        }
+    }
+
+    /* Mobile toggle button styles */
+    #mobile-sidebar-toggle {
+        display: none;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 9999;
+        background: #dc2626;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    #mobile-sidebar-toggle:hover {
+        background: #c53030;
+        transform: scale(1.1);
+    }
+
+    /* Style untuk hasil pencarian */
+    .search-highlight {
+        background-color: #fef3c7;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
+
+    /* Style untuk pesan tidak ditemukan */
+    .no-results {
+        text-align: center;
+        padding: 1rem;
+        color: #6b7280;
+        font-style: italic;
+    }
